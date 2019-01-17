@@ -36,6 +36,7 @@
                 <td><from:errors cssClass="error" path="base_b"/></td>
             </tr>
             <tr>
+
                 <td colspan="2"><input type="submit" value="add"/></td>
 
             </tr>

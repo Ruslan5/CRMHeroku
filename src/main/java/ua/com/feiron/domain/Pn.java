@@ -8,6 +8,8 @@ public class Pn {
 
     @Id
     @Column(name = "id")
+    @SequenceGenerator(name="seq-gen",sequenceName="profnastil_id_seq", initialValue=205, allocationSize=12)
+    @GeneratedValue(strategy= GenerationType.SEQUENCE, generator="seq-gen")
     private Integer id;
 
     @Column(name = "NAME")
