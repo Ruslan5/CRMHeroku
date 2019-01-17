@@ -8,7 +8,6 @@ public class Pn {
 
     @Id
     @Column(name = "id")
-    @GeneratedValue
     private Integer id;
 
     @Column(name = "NAME")
