@@ -9,10 +9,13 @@ public class Contact {
 
     @Id
     @Column(name = "ID")
-    @GeneratedValue
+    @SequenceGenerator(name="seq-gen",sequenceName="contact_id_seq", initialValue=205, allocationSize=12)
+    @GeneratedValue(strategy= GenerationType.SEQUENCE, generator="seq-gen")
     private Integer id;
 
     @Column(name = "DATE_CR")
+    @SequenceGenerator(name="seq-gen",sequenceName="contact_date_cr_seq", initialValue=300, allocationSize=15)
+    @GeneratedValue(strategy= GenerationType.AUTO, generator="seq-gen")
     private Timestamp date_cr;
 
     @Column(name = "FIO")
